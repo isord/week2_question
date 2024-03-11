@@ -1,4 +1,5 @@
 from priority_queue import PriorityQueue
+
 def main():
   pq = PriorityQueue()
   pq.push("Task 1", 3)
@@ -9,5 +10,4 @@ def main():
   print(pq.pop())
 
 if __name__ == "__main__":
-
-main()
+  main()
