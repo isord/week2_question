@@ -7,7 +7,7 @@ class PriorityQueue:
     self.heap.append(entry)
     self._sift_up(len(self.heap) - 1)
 
-   def pop(self):
+  def pop(self):
     if len(self.heap) > 1:
       self._swap(0, len(self.heap) - 1)
       item = self.heap.pop()
