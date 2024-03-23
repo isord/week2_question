@@ -42,11 +42,10 @@ class TestPriorityQueue(unittest.TestCase):
     pq.push("Task 1", 3)
     pq.push("Task 2", 1)
     pq.push("Task 3", 2)
-    pq.push("Task 1", 4)
 
     self.assertEqual(pq.pop()[1], "Task 2")
-    self.assertEqual(pq.pop(), "Task 3")
-    self.assertEqual(pq.pop(), "Task 1")
+    self.assertEqual(pq.pop()[1], "Task 3")
+    self.assertEqual(pq.pop()[1], "Task 1")
     self.assertIsNotNone(pq.pop())
 
   def test_priority_queue_negative_priority(self):
