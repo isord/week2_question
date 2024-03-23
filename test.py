@@ -11,6 +11,7 @@ class TestPriorityQueue(unittest.TestCase):
     pq.push("Task 3", 2)
 
     self.assertEqual(pq.pop()[1], "Task 2")
+    po.pop()
     self.assertIsNone(pq.pop())
 
   def test_priority_queue_empty_pop(self):
@@ -28,6 +29,7 @@ class TestPriorityQueue(unittest.TestCase):
     pq.push("Task 5", 0)
 
     self.assertEqual(pq.pop()[1], "Task 5")
+    pq.pop()
     self.assertIsNone(pq.pop())
 
   def test_priority_queue_duplicate_push_pop(self):
@@ -48,6 +50,7 @@ class TestPriorityQueue(unittest.TestCase):
     pq.push("Task 3", 2)
 
     self.assertEqual(pq.pop()[1], "Task 2")
+    pq.pop()
     self.assertIsNone(pq.pop())
 
 if __name__ == "__main__":
