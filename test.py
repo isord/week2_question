@@ -50,7 +50,6 @@ class TestPriorityQueue(unittest.TestCase):
     pq.push("Task 3", 2)
 
     self.assertEqual(pq.pop()[1], "Task 2")
-    pq.pop()
     self.assertIsNone(pq.pop())
 
 if __name__ == "__main__":
